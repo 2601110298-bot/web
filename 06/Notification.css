@@ -1,0 +1,31 @@
+.notification-wrapper {
+    margin: 8px 0;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+    /* 알림이 나타날 때 위에서 아래로 부드럽게 등장하는 애니메이션 */
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+.notification-text {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

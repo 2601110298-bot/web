@@ -1,0 +1,29 @@
+.verdict-card {
+    padding: 16px 24px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 물이 끓을 때 (붉은색 테마) */
+.verdict-card.boiling {
+    background-color: #ffeef0;
+    color: #d93025;
+    border: 1px solid #ffcdd2;
+}
+
+/* 물이 끓지 않을 때 (푸른색 테마) */
+.verdict-card.not-boiling {
+    background-color: #eef6ff;
+    color: #1a73e8;
+    border: 1px solid #b3d8ff;
+}
+
+.verdict-card p {
+    margin: 0;
+}
